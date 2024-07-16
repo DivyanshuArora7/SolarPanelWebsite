@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solar Panel Project</title>
+    <link rel="stylesheet" href="solarpannel.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Solar Panel Project</h1>
+        </header>
+        <main>
+            <div class="input-container">
+                <label for="choice">Choose an option:</label>
+                <select id="choice">
+                    <option value="1">Input Area in square meters</option>
+                    <option value="2">Input Power Supply in kW</option>
+                </select>
+            </div>
+            <div class="input-container" id="area-container">
+                <label for="area">Enter Area in square meters:</label>
+                <input type="number" id="area" step="0.01">
+            </div>
+            <div class="input-container" id="power-container" style="display: none;">
+                <label for="power">Enter Power Supply in kW:</label>
+                <input type="number" id="power" step="0.01">
+            </div>
+            <div class="input-container">
+                <label for="energy">Enter Energy in kWh:</label>
+                <input type="number" id="energy" step="0.01">
+            </div>
+            <button onclick="calculate()">Calculate</button>
+            <div id="results" class="results"></div>
+        </main>
+    </div>
+    <script src="solarpannel.js"></script>
+</body>
+</html>
